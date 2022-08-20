@@ -1,18 +1,23 @@
 <template>
   <div class="home">
-    <img alt="Vue logo" src="../assets/logo.png">
-    <HelloWorld msg="Welcome to Your Vue.js + TypeScript App"/>
+    <app-cards-list></app-cards-list>
   </div>
 </template>
 
 <script lang="ts">
 import Vue from 'vue';
-import HelloWorld from '@/components/HelloWorld.vue'; // @ is an alias to /src
+import AppAuth from '@/components/AppAuth.vue';
+import LogIn from '@/components/AppAuth/LogIn.vue';
+import SignUp from '@/components/AppAuth/SignUp.vue';
+import AppCardsList from '@/components/AppCardsList.vue';
 
 export default Vue.extend({
   name: 'Home',
   components: {
-    HelloWorld,
+    AppAuth,
+    LogIn,
+    SignUp,
+    AppCardsList,
   },
 });
 </script>
