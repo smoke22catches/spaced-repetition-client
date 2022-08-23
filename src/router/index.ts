@@ -1,6 +1,6 @@
 import Vue from 'vue'
 import VueRouter, { RouteConfig } from 'vue-router'
-import Home from '../views/Home.vue'
+import AppAuth from '@/views/AppAuth.vue'
 import AppAuthLogIn from '@/views/AppAuth/AppAuthLogIn.vue'
 import AppAuthSignUp from '@/views/AppAuth/AppAuthSignUp.vue'
 
@@ -10,7 +10,7 @@ const routes: Array<RouteConfig> = [
   {
     path: '/',
     name: 'Home',
-    component: Home
+    component: AppAuth
   },
   {
     path: '/login',
